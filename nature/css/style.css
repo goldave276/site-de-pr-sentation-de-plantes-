@@ -1,0 +1,228 @@
+
+@import url(https://fonts.google.com/specimen/Montserrat?query=monts);
+@import url(https://fonts.google.com/specimen/Abril+Fatface?query=abril&sidebar.open&selection.family=Abril+Fatface);
+
+*{
+    font-family: 'Montserrat';
+}
+
+body{
+    margin: 0px auto;
+}
+
+/* tête de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+    width: 150px;
+}
+
+section.top-page{
+    background: url(../Challenge/images/bg.jpg);
+    background-size: cover;
+    padding: 25px;
+}
+
+/* page de bienvenue */
+
+.landing-page{
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title{
+    color: white;
+    font-size: 80px;
+    font-family:'abril' ;
+}
+
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* menu de navigation */
+
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 40px;
+}
+
+nav.nav li{
+    color: white;
+}
+
+/* services */
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon{
+    font-size: 50px;
+    color: greenyellow;
+}
+
+.service-detail{
+    font-weight: 600px;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+/* best-sells */
+.section-title{
+    font-size: 50px;
+    font-family: 'Abrill fatFace', cursive;
+    font-weight: 100px;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: greenyellow;
+    width: 50px;
+    height: 7px;
+    bottom: 0px; 
+}
+
+.bests-items{
+    margin: 200px;
+}
+
+.best-plants{
+  background-color:red;
+  min-height:500px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.plant-box{
+   position: relative;
+    background-size: cover;
+   background-position: center;
+   
+}
+
+.no-grid{
+    min-width: 350px;
+    height: 500px;
+    flex:1; 
+}
+
+.plant1{
+    background-image: url(../Challenge/images/nos_meilleures_ventes/1.jpg);   
+}
+
+.plant2{
+    background-image: url(../Challenge/images/nos_meilleures_ventes/2.jpg);
+}
+
+.plant3{
+    background-image: url(../Challenge/images/nos_meilleures_ventes/3.jpg);
+}
+
+.plant4{
+    background-image: url(../Challenge/images/nos_meilleures_ventes/4.jpg);
+}
+
+.plant-details{
+    position: absolute;
+    width:100% ;
+    bottom: 0;
+    background-color:#FFFFFFDF ;
+    padding: 5px 20px;
+}
+
+.plant-name{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.plant-price{
+    color: #ADD981;
+    font-weight: 800;
+     line-height: 3px;
+}
+
+/* Nos plantes */
+
+.all-plants{
+    margin: 150px;
+}
+
+.plant-grid{
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+   
+}
+
+.plant-grid1{
+    background-image: url(../Challenge/images/nos_plantes/1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.plant-grid2{
+    background-image: url(../Challenge/images/nos_plantes/2.jpg);
+    grid-column:3/5 ;
+}
+
+.plant-grid3{
+    background-image: url(../Challenge/images/nos_plantes/3.jpg);
+    grid-column:3/5 ;
+}
+
+.plant-grid4{
+    background-image: url(../Challenge/images/nos_plantes/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+.plant-grid5{
+    background-image: url(../Challenge/images/nos_plantes/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.plant-grid6{
+    background-image: url(../Challenge/images/nos_plantes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* pied de page */
+
+footer{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: black;
+}
